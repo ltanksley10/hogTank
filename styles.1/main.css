@@ -1,0 +1,613 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Pontano Sans', sans-serif;
+    color: #3b200f;
+    /*background: url('https://chowhound1.cbsistatic.com/assets/2014/09/30741_easy_bbq_baby_back_ribs_3000x2000.jpg');*/
+    background: url('https://www.homesicktexan.com/wp-content/uploads/2019/05/Apricot-chipotle-ribs_DSC5291-2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+header {
+    text-align: center;
+}
+h1 {
+    font-family: 'Sigmar One', cursive;
+    font-size: 50px;
+    margin: 0 auto;
+    text-shadow: 2px 2px 3px orange;
+}
+h3 {
+    color: #3b200f;
+    font-family: 'Sigmar One', cursive;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #3b200f;
+}
+a:hover {
+    color: white;
+    background: orange;
+    border-radius: 5px;
+}
+a h2:hover {
+    background: orange;
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    padding: 5px;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+ul li a {
+    font-weight: bolder;
+    font-size: 25px;
+    text-decoration: none;
+    padding: 5px 10px;
+    margin: 0 auto;
+}
+hr {
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 165, 0, 0.75), rgba(0, 0, 0, 0));
+    width: 100%;
+}
+article p {
+    font-size: 20px;
+    margin: 15px 8vw;
+    text-align: center;
+}
+aside ul li {
+    font-size: 18px;
+}
+#hours {
+    display: block;
+    float: left;
+    margin-top: 40px;
+    background: orange;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    width: 16%;
+    box-shadow: 2px 2px 15px -1px #5b2e35;
+}
+#favorites {
+    display: block;
+    float: right;
+    margin-top: 40px;
+    background: orange;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    width: 16%;
+    box-shadow: 2px 2px 15px -1px #5b2e35;
+}
+section img {
+    width: 60%;
+    height: auto;
+    border-radius: 10px;
+    margin: 2px 5px 15px 5px;
+    box-shadow: 2px 2px 15px -1px #5b2e35;
+}
+#menuImage {
+    width: 60%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#menu {
+    text-align: center;
+    padding: 10px 10px;
+    margin-bottom: 15px;
+}
+#footerContent {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+footer p {
+    font-size: 18px;
+    display: flex;
+    padding: 10px 10px;
+}
+#mainPageContainer {
+    min-height: 100vh;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 1vw 2vw;
+    box-shadow: .5px .5px 15px -5px gray;
+}
+#contactForm {
+    border-radius: 3%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 15vw;
+    margin-left: 15vw;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #3b200f;;
+    color: white;
+}
+label {
+    margin-left: 22%;
+}
+input, textarea {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 8px;
+    border-radius: 2%;
+    border: none;
+}
+.contactInfo {
+    width: 350px;
+    height: 30px;
+}
+textarea {
+    width: 350px;
+    height: 75px;
+}
+#submitBtn {
+    background: orange;
+    color: white;
+    border-radius: 10%;
+    border: none;
+    padding: 10px;
+}
+#submitBtn:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+#aboutUs h1{
+    text-align: center;
+}
+#aboutUs p {
+    text-align: left;
+    text-indent: 5%;
+    margin-top: 0px;
+}
+/*#aboutImg1 {*/
+/*    margin-top: 5px;*/
+/*    margin-left: 5px;*/
+/*    float: right;*/
+/*    width: 300px;*/
+/*    height: auto;*/
+/*    border-radius: 5px;*/
+/*}*/
+/*#aboutImg2 {*/
+/*    float: left;*/
+/*    width: 300px;*/
+/*    height: auto;*/
+/*    border-radius: 5px;*/
+/*    margin-top: 10px;*/
+/*    margin-right: 10px;*/
+/*}*/
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    body {
+        background: url('https://images.unsplash.com/photo-1546962339-5ff89552b8ed?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1349&q=80');
+    }
+    h1 {
+        font-size: 30px;
+        margin: 0 auto;
+        text-shadow: 2px 2px 3px orange;
+    }
+    #mainPageContainer {
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+    ul li a {
+        font-size: 17px;
+    }
+    article p {
+        font-size: 17px;
+        text-align: center;
+    }
+    aside ul li {
+        font-size: 1rem;
+    }
+    #mainContent {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #hours {
+        display: block;
+        order: 3;
+        width: 75%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15px;
+        background: rgba(255,165,0, .8);
+    }
+    #favorites {
+        display: block;
+        margin-top: 0px;
+        order: 2;
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+        background: rgba(255,165,0, .8);
+    }
+    section img {
+        display: flex;
+        order: 1;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        /*margin-top: 10px;*/
+        /*margin-left: auto;*/
+        /*margin-right: auto;*/
+    }
+    section a h2 {
+        font-size: 18px;
+    }
+    footer p {
+        font-size: 15px;
+        text-align: center;
+    }
+    footer {
+        margin-top: 20px;
+    }
+    #footerContent {
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    #menuImage {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    #contactForm {
+        border-radius: 3%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-right: 15vw;
+        margin-left: 15vw;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-color: #3b200f;;
+        color: white;
+    }
+    label, input, textarea {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .contactInfo {
+        width: 150px;
+        height: 25px;
+    }
+    textarea {
+        width: 150px;
+        height: 75px;
+    }
+    #submitBtn {
+        background: orange;
+        color: white;
+        border-radius: 10%;
+        border: none;
+        padding: 10px;
+    }
+    #submitBtn:hover {
+        cursor: pointer;
+        transform: scale(1.2);
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    body {
+        background: url('https://images.unsplash.com/photo-1546962339-5ff89552b8ed?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1349&q=80');
+    }
+    h1 {
+        font-size: 40px;
+        margin: 0 auto;
+        text-shadow: 2px 2px 3px orange;
+    }
+    h3 {
+        font-size: 25px;
+    }
+    .container {
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+    ul li a {
+        font-size: 25px;
+    }
+    article p {
+        font-size: 22px;
+        text-align: center;
+    }
+    aside ul li {
+        font-size: 1.5rem;
+    }
+    #mainContent {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #hours {
+        display: block;
+        order: 3;
+        width: 70%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15px;
+        background: rgba(255,165,0, .8);
+    }
+    #favorites {
+        display: block;
+        margin-top: 0px;
+        order: 2;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        background: rgba(255,165,0, .8);
+    }
+    section img {
+        display: flex;
+        order: 1;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        /*margin-top: 10px;*/
+        /*margin-left: auto;*/
+        /*margin-right: auto;*/
+    }
+    section a h2 {
+        font-size: 25px;
+    }
+    footer p {
+        font-size: 20px;
+        text-align: center;
+    }
+    footer {
+        margin-top: 25px;
+    }
+    #footerContent {
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    #menuImage {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    #contactForm {
+        border-radius: 3%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-right: 15vw;
+        margin-left: 15vw;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-color: #3b200f;;
+        color: white;
+    }
+    label, input, textarea {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .contactInfo {
+        width: 150px;
+        height: 25px;
+    }
+    textarea {
+        width: 150px;
+        height: 75px;
+    }
+    #submitBtn {
+        background: orange;
+        color: white;
+        border-radius: 10%;
+        border: none;
+        padding: 10px;
+    }
+    #submitBtn:hover {
+        cursor: pointer;
+        transform: scale(1.2);
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+    h1 {
+        font-size: 40px;
+        margin: 0 auto;
+        text-shadow: 2px 2px 3px orange;
+    }
+    h3 {
+        font-size: 25px;
+    }
+    .container {
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+    ul li a {
+        font-size: 25px;
+    }
+    article p {
+        font-size: 22px;
+        text-align: center;
+    }
+    aside ul li {
+        font-size: 1.5rem;
+    }
+    #mainContent {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #hours {
+        display: block;
+        order: 3;
+        width: 50%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15px;
+        background: rgba(255,165,0, .8);
+    }
+    #favorites {
+        display: block;
+        margin-top: 0px;
+        order: 2;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        background: rgba(255,165,0, .8);
+    }
+    section img {
+        display: flex;
+        order: 1;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        /*margin-top: 10px;*/
+        /*margin-left: auto;*/
+        /*margin-right: auto;*/
+    }
+    section a h2 {
+        font-size: 25px;
+    }
+    footer p {
+        font-size: 20px;
+        text-align: center;
+    }
+    footer {
+        margin-top: 25px;
+    }
+    #footerContent {
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    #menuImage {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    #contactForm {
+        border-radius: 3%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-right: 15vw;
+        margin-left: 15vw;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-color: #3b200f;;
+        color: white;
+    }
+    label, input, textarea {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .contactInfo {
+        width: 150px;
+        height: 25px;
+    }
+    textarea {
+        width: 150px;
+        height: 75px;
+    }
+    #submitBtn {
+        background: orange;
+        color: white;
+        border-radius: 10%;
+        border: none;
+        padding: 10px;
+    }
+    #submitBtn:hover {
+        cursor: pointer;
+        transform: scale(1.2);
+    }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1600px) {
+    #contactForm {
+        border-radius: 3%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-right: 15vw;
+        margin-left: 15vw;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-color: #3b200f;;
+        color: white;
+    }
+    label, input, textarea {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .contactInfo {
+        width: 250px;
+        height: 25px;
+    }
+    textarea {
+        width: 250px;
+        height: 75px;
+    }
+    #submitBtn {
+        background: orange;
+        color: white;
+        border-radius: 10%;
+        border: none;
+        padding: 10px;
+    }
+    #submitBtn:hover {
+        cursor: pointer;
+        transform: scale(1.2);
+    }
+}
+
