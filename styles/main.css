@@ -1,481 +1,124 @@
-/* Universal Content */
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-body {
-    font-family: 'Pontano Sans', sans-serif;
-    color: #3b200f;
-    background: url('https://www.homesicktexan.com/wp-content/uploads/2019/05/Apricot-chipotle-ribs_DSC5291-2.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
+/* UNIVERSAL CONTENT */
+* { padding: 0; margin: 0; box-sizing: border-box; }
+body { font-family: 'Pontano Sans', sans-serif!important; color: #3b200f!important; background: url('https://images.unsplash.com/photo-1546962339-5ff89552b8ed?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1349&q=80'); 
+        background-size: cover; background-repeat: no-repeat; }
+#mainPageContainer { min-height: 100vh; margin-left: 5vw; margin-right: 5vw; background: rgba(255, 255, 255, 0.7); padding: 1vw 2vw; box-shadow: .5px .5px 15px -5px gray; }
+hr { border: 0; height: 2px; width: 100%; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 165, 0, 0.75), rgba(0, 0, 0, 0)); }
+#homeMain:before, #homeMain:after { display: block; content: ""; height: 2px; width: 100%; 
+    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(255, 165, 0, 0.75), rgba(0, 0, 0, 0))!important;
+    background: -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(255, 165, 0, 0.75), rgba(0, 0, 0, 0))!important;
+    background: -o-linear-gradient(left, rgba(0, 0, 0, 0), rgba(255, 165, 0, 0.75), rgba(0, 0, 0, 0))!important;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 165, 0, 0.75), rgba(0, 0, 0, 0))!important; }
+#footerContent { display: flex; justify-content: center; margin-top: 15px!important; margin-bottom: 15px; }
+footer p { font-size: 18px; display: flex; padding: 10px 10px; }
+#phone-link:hover { color: white; background: orange; padding: 5px; border-radius: 5px; }
 
-nav {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 15px;
-}
-nav ul {
-    display: flex;
-    list-style-type: none;
-}
-ul li a {
-    font-weight: bolder;
-    font-size: 25px;
-    text-decoration: none;
-    padding: 5px 10px;
-    margin: 0 auto;
-}
-hr {
-    border: 0;
-    height: 2px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 165, 0, 0.75), rgba(0, 0, 0, 0));
-    width: 100%;
-}
-#mainPageContainer {
-    min-height: 100vh;
-    margin-left: 15vw;
-    margin-right: 15vw;
-    background: rgba(255, 255, 255, 0.7);
-    padding: 1vw 2vw;
-    box-shadow: .5px .5px 15px -5px gray;
-}
-#footerContent {
-    display: flex;
-    justify-content: center;
-    margin-top: 15px!important;
-    margin-bottom: 15px;
-}
-footer p {
-    font-size: 18px;
-    display: flex;
-    padding: 10px 10px;
-}
+/* NAV CONTENT */
+header { text-align: center; }
+a #pig:hover { transform: scale(1.1); }
+.homePig { margin-bottom: 16px!important; }
+h1 { font-family: 'Sigmar One', cursive; font-size: 50px!important; margin: 0 auto; text-shadow: 2px 2px 3px orange; }
+h1:hover { color: orange; text-shadow: 2px 2px 3px #3b200f; }
+nav { display: flex; justify-content: center; }
+.nav-links:hover { color: white!important; background: orange; border-radius: 5px; }
+nav ul { display: flex; list-style-type: none; }
+#mainNav ul { margin-right: 30px; margin-top: 8px; }
+ul li a { font-weight: bolder; font-size: 25px; text-decoration: none; padding: 5px 10px; margin: 0 auto; }
+#navMargin { margin-bottom: 20px; }
 
-/*Main Content/ Home Page */
-header {
-    text-align: center;
-}
-h1 {
-    font-family: 'Sigmar One', cursive;
-    font-size: 50px;
-    margin: 0 auto;
-    text-shadow: 2px 2px 3px orange;
-}
-h3 {
-    color: #3b200f;
-    font-family: 'Sigmar One', cursive;
-}
-ul {
-    list-style: none;
-}
-a {
-    text-decoration: none;
-    color: #3b200f;
-}
-a:hover {
-    color: white;
-    background: orange;
-    border-radius: 5px;
-}
-a h2:hover {
-    background: orange;
-    width: 25%;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 5px;
-    padding: 5px;
-}
-article p {
-    font-size: 20px;
-    margin: 15px 8vw;
-    text-align: center;
-}
-aside ul li {
-    font-size: 18px;
-}
-#hours {
-    display: block;
-    float: left;
-    margin-top: 40px;
-    background: orange;
-    color: white;
-    border-radius: 5px;
-    padding: 10px;
-    text-align: center;
-    width: 16%;
-    box-shadow: 2px 2px 15px -1px #5b2e35;
-}
-#favorites {
-    display: block;
-    float: right;
-    margin-top: 40px;
-    background: orange;
-    border-radius: 5px;
-    color: white;
-    padding: 10px;
-    text-align: center;
-    width: 16%;
-    box-shadow: 2px 2px 15px -1px #5b2e35;
-}
-section img {
-    width: 60%;
-    height: auto;
-    border-radius: 10px;
-    margin: 2px 5px 15px 5px;
-    box-shadow: 2px 2px 15px -1px #5b2e35;
-}
+/*MAIN HOME PAGE CONTENT */
+h2 { font-size: 20px!important; color: #3b200f; font-family: 'Sigmar One', cursive; }
+h3 { font-size: 20px!important; color: #3b200f; font-family: 'Sigmar One', cursive; }
+#menuLink { padding: 5px; font-size: 25px; color: #3b200f; font-family: 'Pontano Sans', sans-serif; }
+#menuLink:hover { color: white; background: orange; border-radius: 5px; display: inline-block; padding-left: 5px; padding-right: 5px; }
+ul { list-style: none; }
+a { text-decoration: none; color: #3b200f!important; }
+a h2:hover { background: orange; width: 25%; margin-left: auto; margin-right: auto; border-radius: 5px; padding: 5px; }
+article p { font-size: 20px; margin: 15px 8vw; text-align: center; }
+aside ul { font-size: 18px; text-align: center!important; margin-right: 30px; }
+#hours { display: block; float: left; margin-top: 40px; background: orange; color: white; border-radius: 5px; padding: 20px 10px 10px 10px; width: 20%; box-shadow: 2px 2px 15px -1px #5b2e35; }
+#favorites { display: block; float: right; margin-top: 40px; background: orange; border-radius: 5px; color: white; padding: 20px 10px 10px 10px; width: 20%; box-shadow: 2px 2px 15px -1px #5b2e35; }
+.carousel { margin-left: auto; margin-right: auto; margin-bottom: 20px; width: 50%; }
+.carousel img { border-radius: 5px!important; }
 
-/* Menu Page */
-#menuImage {
-    width: 60%;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-#menu {
-    text-align: center;
-    padding: 10px 10px;
-    margin-bottom: 15px;
-}
+/* MENU PAGE CONTENT */
+#menuImage { width: 60%; height: auto; display: block; margin-left: auto; margin-right: auto; margin-top: 20px; margin-bottom: 20px; }
+#menu { text-align: center; padding: 10px 10px; margin-bottom: 15px; }
 
-/* Contact Page */
-#contactForm {
-    border-radius: 3%;
-    padding-top: 20px;
-    background-color: white;
-    color: #3b200f;
-    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.4);
-    width: 100%;
-    margin: 15px auto 15px auto;
-    max-width: 720px;
-}
-#contactForm p {
-    font-size: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-label {
-    display: flex;
-    align-items: center;
-    font-size: 1.25rem;
-    margin-bottom: .5rem;
-}
-input, textarea {
-    font-size: 16px;
-    text-indent: 5px;
-    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.4);
-    font-family: 'Pontano Sans', sans-serif;
-}
-.form-control {
-    padding: 0.375rem 0.75rem;
-    width: 100%;
-    height: 40px;
-    border-radius: 5px;
-    border: none;
-}
-.form-group {
-  margin: 0 auto 1rem auto;
-  padding: 0.25rem;
-}
-.input-textarea {
-    width: 100%;
-    min-height: 120px;
-    padding: 10px;
-    font-size: 18px;
-    resize: vertical;
-    border: none;
-    border-radius: 5px;
-}
-#description {
-    font-weight: lighter;
-    font-size: 20px;
-}
+/* ABOUT PAGE CONTENT */ 
+#aboutLabel { text-align: center; font-family: 'Sigmar One', cursive; font-size: 30px!important; margin: 0 auto; text-shadow: 2px 2px 3px orange; }
+#aboutUs h1{ text-align: center; }
+#aboutUs p { text-align: left; text-indent: 5%; margin-top: 0px; }
 
-#contact-form {
-    padding: 40px;
-    display: block;
-    border-radius: 15px;
-}
-#submitBtn {
-    background: orange;
-    color: white;
-    border-radius: 2px;
-    border: none;
-    padding: 10px;
-    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.4);
-    display: block;
-    width: 100%;
-}
-#submitBtn:hover {
-    cursor: pointer;
-    transform: scale(1.05);
-}
+/* CONTACT PAGE CONTENT */
+#contactForm { border-radius: 3%; padding-top: 20px; background-color: white; color: #3b200f; box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.4); width: 100%; margin: 15px auto 15px auto; max-width: 720px; }
+#contactForm p { font-size: 20px; padding-left: 10px; padding-right: 10px; }
+label { display: flex; align-items: center; font-size: 1.25rem; margin-bottom: .5rem; }
+input, textarea { font-size: 16px; text-indent: 5px; box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.4); font-family: 'Pontano Sans', sans-serif; }
+.form-control { padding: 0.375rem 0.75rem; width: 100%; height: 40px; border-radius: 5px; border: none; }
+.form-group { margin: 0 auto 1rem auto; padding: 0.25rem; }
+.input-textarea { width: 100%; min-height: 120px; padding: 10px; font-size: 18px; resize: vertical; border: none; border-radius: 5px; }
+#description { font-weight: lighter; font-size: 20px; }
+#contact-form { padding: 40px; display: block; border-radius: 15px; }
+#submitBtn { background: orange; color: white; border-radius: 2px; border: none; padding: 10px; box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.4); display: block; width: 100%; }
+#submitBtn:hover { cursor: pointer; transform: scale(1.05); }
 
-/* About Page */ 
-#aboutUs h1{
-    text-align: center;
-}
-#aboutUs p {
-    text-align: left;
-    text-indent: 5%;
-    margin-top: 0px;
-}
-
-
-/* Media Queries */ 
+/* MEDIA QUERIES */ 
 @media screen and (min-width: 320px) and (max-width: 767px) {
-    body {
-        background: url('https://images.unsplash.com/photo-1546962339-5ff89552b8ed?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1349&q=80');
-    }
-    h1 {
-        font-size: 30px;
-        margin: 0 auto;
-        text-shadow: 2px 2px 3px orange;
-    }
-    #mainPageContainer {
-        margin-left: 2vw;
-        margin-right: 2vw;
-    }
-    ul li a {
-        font-size: 17px;
-    }
-    article p {
-        font-size: 17px;
-        text-align: center;
-    }
-    aside ul li {
-        font-size: 1rem;
-    }
-    #mainContent {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    #hours {
-        display: block;
-        order: 3;
-        width: 75%;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 15px;
-        background: rgba(255,165,0, .8);
-    }
-    #favorites {
-        display: block;
-        margin-top: 0px;
-        order: 2;
-        width: 75%;
-        margin-left: auto;
-        margin-right: auto;
-        background: rgba(255,165,0, .8);
-    }
-    section img {
-        display: flex;
-        order: 1;
-        margin-left: auto;
-        margin-right: auto;
-        width: 100%;
-    }
-    section a h2 {
-        font-size: 18px;
-    }
-    footer p {
-        font-size: 15px;
-        text-align: center;
-    }
-    footer {
-        margin-top: 20px;
-    }
-    #footerContent {
-        display: flex;
-        justify-content: center;
-        margin-top: 15px;
-        margin-bottom: 15px;
-    }
-    #menuImage {
-        width: 100%;
-        height: auto;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-    #contactForm {
-        border-radius: 5px;
-    }
+    h1 { font-size: 30px; margin: 0 auto; text-shadow: 2px 2px 3px orange; }
+    #mainPageContainer { margin-left: 2vw; margin-right: 2vw; }
+    ul li a { font-size: 17px; }
+    article p { font-size: 17px; text-align: center; }
+    aside ul li { font-size: 1rem; }
+    #mainContent { display: flex; flex-direction: column; justify-content: center; }
+    #hours { display: block; order: 3; width: 75%; text-align: center; margin-left: auto; margin-right: auto; margin-top: 15px; background: rgba(255,165,0, .8); }
+    #favorites { display: block; margin-top: 0px; order: 2; width: 75%; text-align: center; margin-left: auto; margin-right: auto; background: rgba(255,165,0, .8); }
+    #homeMain:after { margin-top: 20px; }
+    .carousel { width: 100%; }
+    section a h2 { font-size: 18px; }
+    #menuImage { width: 100%; height: auto; display: block; margin: 20px auto;}
+    footer p { font-size: 15px; text-align: center; }
+    footer { margin-top: 20px; }
+    #footerContent { display: flex; justify-content: center; margin-top: 15px; margin-bottom: 15px; }
+    #contactForm { border-radius: 5px; }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-    body {
-        background: url('https://images.unsplash.com/photo-1546962339-5ff89552b8ed?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1349&q=80');
-    }
-    h1 {
-        font-size: 40px;
-        margin: 0 auto;
-        text-shadow: 2px 2px 3px orange;
-    }
-    h3 {
-        font-size: 25px;
-    }
-    .container {
-        margin-left: 10vw;
-        margin-right: 10vw;
-    }
-    ul li a {
-        font-size: 25px;
-    }
-    article p {
-        font-size: 22px;
-        text-align: center;
-    }
-    aside ul li {
-        font-size: 1.5rem;
-    }
-    #mainContent {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    #hours {
-        display: block;
-        order: 3;
-        width: 70%;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 15px;
-        background: rgba(255,165,0, .8);
-    }
-    #favorites {
-        display: block;
-        margin-top: 0px;
-        order: 2;
-        width: 70%;
-        margin-left: auto;
-        margin-right: auto;
-        background: rgba(255,165,0, .8);
-    }
-    section img {
-        display: flex;
-        order: 1;
-        margin-left: auto;
-        margin-right: auto;
-        width: 100%;
-    }
-    section a h2 {
-        font-size: 25px;
-    }
-    footer p {
-        font-size: 20px;
-        text-align: center;
-    }
-    footer {
-        margin-top: 25px;
-    }
-    #footerContent {
-        display: flex;
-        justify-content: center;
-        margin-top: 15px;
-        margin-bottom: 15px;
-    }
-    #menuImage {
-        width: 100%;
-        height: auto;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
+    h1 { font-size: 40px; margin: 0 auto; text-shadow: 2px 2px 3px orange; }
+    h2, h3 { font-size: 25px!important; }
+    .container { margin-left: 10vw; margin-right: 10vw; }
+    ul li a { font-size: 25px; }
+    article p { font-size: 22px; text-align: center; }
+    aside ul li { font-size: 1.5rem; }
+    #mainContent { display: flex; flex-direction: column; justify-content: center; }
+    #hours { display: block; order: 3; width: 70%; text-align: center; margin-left: auto; margin-right: auto; margin-top: 15px; background: rgba(255,165,0, .8); }
+    #favorites { display: block; margin-top: 0px; order: 2; width: 70%; margin-left: auto; margin-right: auto; background: rgba(255,165,0, .8); }
+    #homeMain:after { margin-top: 20px; }
+    .carousel { width: 80%; }
+    section img { display: flex; order: 1; margin-left: auto; margin-right: auto; width: 100%; } 
+    section a h2 { font-size: 25px; }
+    #menuImage { width: 100%; height: auto; display: block; margin: 20px auto; }
+    footer p { font-size: 20px; text-align: center; }
+    footer { margin-top: 25px; }
+    #footerContent { display: flex; justify-content: center; margin-top: 15px; margin-bottom: 15px; }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
-    h1 {
-        font-size: 40px;
-        margin: 0 auto;
-        text-shadow: 2px 2px 3px orange;
-    }
-    h3 {
-        font-size: 25px;
-    }
-    .container {
-        margin-left: 10vw;
-        margin-right: 10vw;
-    }
-    ul li a {
-        font-size: 25px;
-    }
-    article p {
-        font-size: 22px;
-        text-align: center;
-    }
-    aside ul li {
-        font-size: 1.5rem;
-    }
-    #mainContent {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    #hours {
-        display: block;
-        order: 3;
-        width: 50%;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 15px;
-        background: rgba(255,165,0, .8);
-    }
-    #favorites {
-        display: block;
-        margin-top: 0px;
-        order: 2;
-        width: 50%;
-        margin-left: auto;
-        margin-right: auto;
-        background: rgba(255,165,0, .8);
-    }
-    section img {
-        display: flex;
-        order: 1;
-        margin-left: auto;
-        margin-right: auto;
-        width: 90%;
-    }
-    section a h2 {
-        font-size: 25px;
-    }
-    footer p {
-        font-size: 20px;
-        text-align: center;
-    }
-    footer {
-        margin-top: 25px;
-    }
-    #footerContent {
-        display: flex;
-        justify-content: center;
-        margin-top: 15px;
-        margin-bottom: 15px;
-    }
-    #menuImage {
-        width: 100%;
-        height: auto;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
+    h1 { font-size: 40px; margin: 0 auto; text-shadow: 2px 2px 3px orange; }
+    h2, h3 { font-size: 30px!important; }
+    .container { margin-left: 10vw; margin-right: 10vw; }
+    ul li a { font-size: 25px; }
+    article p { font-size: 22px; text-align: center; }
+    aside ul li { font-size: 1.5rem; }
+    #mainContent { display: flex; flex-direction: column; justify-content: center; }
+    #hours { display: block; order: 3; width: 50%; text-align: center; margin-left: auto; margin-right: auto; margin-top: 15px; background: rgba(255,165,0, .8); }
+    #favorites { display: block; margin-top: 0px; order: 2; width: 50%; margin-left: auto; margin-right: auto; background: rgba(255,165,0, .8); }
+    #homeMain:after { margin-top: 20px; }
+    .carousel { width: 80%; }
+    section img { display: flex; order: 1; margin-left: auto; margin-right: auto; width: 90%; }
+    section a h2 { font-size: 25px; }
+    #menuImage { width: 100%; height: auto; display: block; margin: 20px auto; }
+    footer p { font-size: 20px; text-align: center; }
+    footer { margin-top: 25px; }
+    #footerContent { display: flex; justify-content: center; margin-top: 15px; margin-bottom: 15px; }
 }
-
-
