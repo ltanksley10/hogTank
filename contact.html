@@ -29,7 +29,8 @@
                 <header class="header text-center">
             	    <p id="description"><em>Please fill out the form below and submit your information to be contacted.</em></p>
                 </header>
-            	<form id="contact-form">
+            	<form id="contact-form" action="https://formsubmit.co/3aba9ddf50648b2974bbe03198b295b2" method="POST">
+            	    <input type="text" name="_honey" style="display:none">
             		<div class="form-group">
             			<label id="name-label" for="name">Name:</label>
             			<input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required />
@@ -46,8 +47,9 @@
             		    <label id="textarea-label">Message:</label>
             		    <textarea id="comments" class="input-textarea" name="comment" aria-label="Message/comment input" placeholder="Enter your comment here.."></textarea>
             		</div>
+            		<input type="hidden" name="_next" value="https://hogtankbbq.loritanksley.com/thankyou.html">
             		<div class="form-group">
-            		    <input type="submit" value="Submit" id="submitBtn">
+            		    <button type="submit" id="submitBtn">Submit</button>
             		</div>
             	</form>
             </div>
