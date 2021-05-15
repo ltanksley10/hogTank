@@ -1,8 +1,22 @@
-# hogTank
-A brochure restaurant website created as a project for someone who has always dreamed of having their own barbeque restaurant. 
+# HogTank BBQ
 
-## Tech used
-This site is built with simple HTML5 and CSS3. Since it's a static website AWS Lambda will be utilized to submit the contact form. 
+A static site built with HTML, CSS and Bootsrap, with a FormSubmit contact form.
 
-## Installation
-No installation is really needed.. simply download the files and open the index.html doc in your browser to view the site.
+
+## Description
+
+This site was built as a concept for a barbeque restaurant for my husband. He has 
+always dreamed of having his own, so I thought it would be fun to create the site for
+him, while also helping myself improve my developer skills. While building the site
+I learned about placing items with Flexbox and had a chance to use Bootstraps carousel,
+as well as implementing a simple contact form with FormSubmit.
+
+### Demo
+https://hogtankbbq.loritanksley.com
+
+### Technologies
+* HTML5
+* CSS3
+* Bootstrap 5.0
+* icons8
+* FormSubmit
